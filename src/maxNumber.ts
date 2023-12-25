@@ -12,6 +12,6 @@ export function findMaxNumber(numbers: number[]): number {
     return maxNum;
 }
 
-const numArr = [2, 3, 6, 8, 1];
-const maxNum = findMaxNumber(numArr);
+const numArr: number[] = [2, 3, 6, 8, 1];
+const maxNum: number = findMaxNumber(numArr);
 console.log(maxNum);

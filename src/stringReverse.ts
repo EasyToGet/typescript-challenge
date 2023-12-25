@@ -13,4 +13,5 @@ export function reverseString(str: string): string {
     return reverseStr;
 }
 
-reverseString('hello');
+const outString: string = reverseString('hello');
+console.log(outString);
