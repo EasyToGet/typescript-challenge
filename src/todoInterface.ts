@@ -15,5 +15,26 @@
 
 export function addTodo(todos: Todo[], task: string): Todo[] {
     // 在此實現函式
+    const newTodo: Todo = {
+        id: todos.length + 1,
+        task: 'Walk the dog',
+        completed: false
+    };
     return [...todos, newTodo];
 }
+
+interface Todo {
+    id: number,
+    task: string,
+    completed: boolean
+};
+
+const existingTodos: Todo[] = [{
+    id: 1,
+    task: 'Buy milk',
+    completed: false
+}];
+
+const updateTodos = addTodo(existingTodos, 'Walk the dog');
+
+console.log(updateTodos);
