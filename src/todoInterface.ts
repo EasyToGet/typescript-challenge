@@ -17,7 +17,7 @@ export function addTodo(todos: Todo[], task: string): Todo[] {
     // 在此實現函式
     const newTodo: Todo = {
         id: todos.length + 1,
-        task: 'Walk the dog',
+        task: task,
         completed: false
     };
     return [...todos, newTodo];
