@@ -11,14 +11,6 @@
  * 輸出: 'Input is a number: 123'
  */
 
-export function handleInput(input: string | number) {
+export function handleInput(input) {
     // 在此實現函式
-    if(typeof input === 'string') {
-        return `Input is a string: ${input}`;
-    } else if(typeof input === 'number') {
-        return `Input is a number: ${input}`;
-    }
 }
-
-handleInput('hello');
-handleInput(123);

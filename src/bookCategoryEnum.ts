@@ -23,12 +23,6 @@ export enum BookCategory {
  * 輸出: 'Book category: Novel'
  */
 
-export function getBookCategory(category: BookCategory): string {
+export function getBookCategory(category) {
   // 在此實現函式
-  return `Book category: ${category}`;
 }
-
-const theBook: BookCategory = BookCategory.Novel;
-
-const outputBookInfo: string = getBookCategory(theBook);
-console.log(outputBookInfo);
