@@ -11,20 +11,14 @@
  * 輸入: { firstName: 'John', lastName: 'Doe' }
  * 輸出: 'John Doe'
  */
-export function getFullName(user: User): string {
-    // 在此實現函式
-    return `${user.firstName} ${user.lastName}`;
-};
-
 interface User {
     firstName: string;
     lastName: string;
 };
 
-const user: User = {
-    firstName: 'John',
-    lastName: 'Doe'
+export function getFullName(user: User): string {
+    // 在此實現函式
+    // const { firstName, lastName } = user;
+    // return `${firstName} ${lastName}`;
+    return `${user.firstName} ${user.lastName}`;
 };
-
-const fullName: string = getFullName(user);
-console.log(fullName);

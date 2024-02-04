@@ -10,13 +10,9 @@
 
 export function processMultiArray(arr: number[][]): number[][] {
     // 在此實現函式
-    const doubleMatrix: number[][] = arr.map(row => {
-        return row.map(element => element * 2);
-    });
-    return doubleMatrix;
+    // const doubleMatrix: number[][] = arr.map(row => {
+    //     return row.map(element => element * 2);
+    // });
+    // return doubleMatrix;
+    return arr.map(row => row.map(element => element * 2));
 }
-
-const numberArr: number[][] = [[1, 2], [3, 4], [5, 6]];
-
-const outputNumArr: number[][] = processMultiArray(numberArr);
-console.log(outputNumArr);

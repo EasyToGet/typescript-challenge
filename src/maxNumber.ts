@@ -7,12 +7,10 @@
  */
 export function findMaxNumber(numbers: number[]): number {
     // 在此實現函式
-    const maxNum = Math.max(...numbers);
-    return maxNum;
+    // const maxNum = Math.max(...numbers);
+    // return maxNum;
+    
+    return Math.max(...numbers);
 };
-
-const numArr: number[] = [2, 3, 6, 8, 1];
-const maxNum = findMaxNumber(numArr);
-console.log(maxNum);
 
 
