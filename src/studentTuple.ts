@@ -10,13 +10,5 @@
 export function printStudentInfo(student: [string, number]): string {
     // 在此實現函式
     const [name, score] = student;
-    const str = `${name}: ${score}%`;
-
-    return str
-}
-
-let student: [string, number];
-student = ['Alice', 85];
-
-const printStudentStr: string = printStudentInfo(student);
-console.log(printStudentStr);
+    return `${name}: ${score}%`;
+};

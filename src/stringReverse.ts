@@ -7,11 +7,10 @@
  */
 export function reverseString(str: string): string {
     // 在此實現函式
-    let arr = str.split('');
-    arr.reverse();
-    const reverseStr = arr.join('');
-    return reverseStr;
+    // let arr = str.split('');
+    // arr.reverse();
+    // const reverseStr = arr.join('');
+    // return reverseStr;
+    
+    return str.split('').reverse().join('');
 }
-
-const outString: string = reverseString('hello');
-console.log(outString);
